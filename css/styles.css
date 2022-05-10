@@ -42,3 +42,49 @@
 .gallery__link:hover {
   cursor: zoom-in;
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.selectedImageModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 80%;
+  max-height: 100vh;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.selectedImageModal__image {
+  max-width: 80%;
+  max-height: 90vh;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    min-height: 30px;
+
+
+    border: none;
+    background-color: transparent;
+    background-image: url(../img/closeButton.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
