@@ -20,8 +20,7 @@ function onOpenImageModal(e) {
   }
 
   e.preventDefault();
-
-  selectedImageModal.classList.remove("is-hidden");
+  document.body.classList.add('modal-open')
   selectedImage.src = e.target.dataset.source;
   selectedImage.alt = e.target.alt;
 
@@ -37,7 +36,8 @@ function onCloseImageModal(e) {
     return;
   }
 
-  selectedImageModal.classList.add("is-hidden");
+  document.body.classList.remove('modal-open')
+
   selectedImage.src = "";
   selectedImage.alt = "";
 

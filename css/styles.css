@@ -51,11 +51,17 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   overflow-y: scroll;
-}
-
-.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+body.modal-open .backdrop {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .selectedImageModal {
@@ -88,3 +94,4 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
