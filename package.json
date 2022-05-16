@@ -1,0 +1,32 @@
+{
+  "name": "goit-js-hw-07",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build --public-url /goit-js-hw-07/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romanblyashuk94/goit-js-hw-07.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romanblyashuk94/goit-js-hw-07/issues"
+  },
+  "homepage": "https://romanblyashuk94.github.io/goit-js-hw-07",
+  "dependencies": {
+    "simplelightbox": "^2.10.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.5.0",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  }
+}
